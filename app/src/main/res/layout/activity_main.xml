@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_roll"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_purple"
+        android:backgroundTintMode="screen"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/button_text_roll"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/dice_view"
+            android:layout_width="@dimen/diceWidth"
+            android:layout_height="@dimen/diceHeight"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:srcCompat="@drawable/dice1" />
+
+        <ImageView
+            android:id="@+id/dice_view_2"
+            android:layout_width="@dimen/diceWidth"
+            android:layout_height="@dimen/diceWidth"
+            android:layout_weight="1"
+            android:padding="16dp"
+            app:srcCompat="@drawable/dice1" />
+    </LinearLayout>
+
+</RelativeLayout>
